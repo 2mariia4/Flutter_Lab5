@@ -1,17 +1,48 @@
-# flags_app_trafimova
+# Угадай флаг
 
-A new Flutter project.
+Приложение-викторина: пользователю показывается флаг страны,
+нужно выбрать правильное название из трёх вариантов. За верные ответы
+начисляются очки.
 
-## Getting Started
+## Автор
 
-This project is a starting point for a Flutter application.
+Трафимова Мария
+Группа: ИСП-242
 
-A few resources to get you started if this is your first Flutter project:
+## Стек и версии
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- Flutter 3.47.5
+- Dart 3.13.4
+- Платформа: Web (Edge)
+- IDE: VS Code
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Скриншот
+
+![Приложение](img/step6_Trafimova.png)
+
+## Структура проекта
+
+- `lib/main.dart` — точка входа, MaterialApp, отключён DEBUG-баннер
+- `lib/data/flags_data.dart` — модель FlagItem и список флагов
+- `lib/widgets/gradient_background.dart` — градиентный фон
+- `lib/widgets/flag_card.dart` — карточка с изображением флага
+- `lib/widgets/answer_buttons.dart` — кнопки вариантов ответа
+- `lib/screens/quiz_screen.dart` — StatefulWidget: логика викторины, Random, setState
+
+## Как запустить
+
+```bash
+git clone https://github.com/2mariia4/Flutter_Lab6.git
+cd Flutter_Lab6
+flutter pub get
+flutter run -d chrome
+```
+
+## Что изучили
+
+- Разбивка приложения на отдельные файлы и виджет-классы
+- Передача данных в StatelessWidget через параметры конструктора
+- Управление состоянием через StatefulWidget и setState()
+- Работа с assets и подключение изображений через pubspec.yaml
+- Использование Random из dart:math для случайного выбора
+- Оформление проекта через Git и GitHub
